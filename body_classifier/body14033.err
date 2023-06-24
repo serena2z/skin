@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/share/pi/ogevaert/zhang/body_classifier/body_classifier.py", line 116, in <module>
+    labels = [label_dict[label] for label in labels]
+  File "/share/pi/ogevaert/zhang/body_classifier/body_classifier.py", line 116, in <listcomp>
+    labels = [label_dict[label] for label in labels]
+KeyError: 'chest'

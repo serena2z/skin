@@ -1,0 +1,15 @@
+/share/pi/ogevaert/zhang/anaconda3/envs/sample_env/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/share/pi/ogevaert/zhang/anaconda3/envs/sample_env/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0%|          | 0/1126 [00:00<?, ?it/s]  0%|          | 0/1126 [00:17<?, ?it/s]
+Traceback (most recent call last):
+  File "/share/pi/ogevaert/zhang/body_classifier/body_classifier.py", line 225, in <module>
+    avg_loss, avg_corrects = train_one_epoch(epoch_number)
+  File "/share/pi/ogevaert/zhang/body_classifier/body_classifier.py", line 195, in train_one_epoch
+    loss.backward()
+  File "/share/pi/ogevaert/zhang/anaconda3/envs/sample_env/lib/python3.9/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/share/pi/ogevaert/zhang/anaconda3/envs/sample_env/lib/python3.9/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn
